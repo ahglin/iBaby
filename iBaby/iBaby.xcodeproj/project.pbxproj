@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16DE680D175E3597005C0843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE680C175E3597005C0843 /* UIKit.framework */; };
+		16DE680F175E3597005C0843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE680E175E3597005C0843 /* Foundation.framework */; };
+		16DE6811175E3597005C0843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6810175E3597005C0843 /* CoreGraphics.framework */; };
+		16DE6817175E3597005C0843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6815175E3597005C0843 /* InfoPlist.strings */; };
+		16DE6819175E3597005C0843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6818175E3597005C0843 /* main.m */; };
+		16DE681D175E3597005C0843 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE681C175E3597005C0843 /* AppDelegate.m */; };
+		16DE681F175E3597005C0843 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE681E175E3597005C0843 /* Default.png */; };
+		16DE6821175E3597005C0843 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6820175E3597005C0843 /* Default@2x.png */; };
+		16DE6823175E3597005C0843 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6822175E3597005C0843 /* Default-568h@2x.png */; };
+		16DE6830175E394D005C0843 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE682F175E394D005C0843 /* TencentOpenAPI.framework */; };
+		16DE6832175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		16DE6834175E3994005C0843 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6833175E3994005C0843 /* libiconv.2.4.0.dylib */; };
+		16DE6836175E39A2005C0843 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6835175E39A2005C0843 /* SystemConfiguration.framework */; };
+		16DE6838175E39AE005C0843 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6837175E39AE005C0843 /* libsqlite3.0.dylib */; };
+		16DE683A175E39B8005C0843 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6839175E39B8005C0843 /* CoreTelephony.framework */; };
+		16DE6848175E3AF8005C0843 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE683E175E3AF8005C0843 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16DE6849175E3AF8005C0843 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6840175E3AF8005C0843 /* SinaWeibo.bundle */; };
+		16DE684A175E3AF8005C0843 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6842175E3AF8005C0843 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16DE684B175E3AF8005C0843 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6844175E3AF8005C0843 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16DE684C175E3AF8005C0843 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6847175E3AF8005C0843 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16DE684F175E41CB005C0843 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE684E175E41CB005C0843 /* LaunchViewController.m */; };
+		16DE6854175E41EE005C0843 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6853175E41EE005C0843 /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16DE6809175E3597005C0843 /* iBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DE680C175E3597005C0843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		16DE680E175E3597005C0843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16DE6810175E3597005C0843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16DE6814175E3597005C0843 /* iBaby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBaby-Info.plist"; sourceTree = "<group>"; };
+		16DE6816175E3597005C0843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16DE6818175E3597005C0843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16DE681A175E3597005C0843 /* iBaby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBaby-Prefix.pch"; sourceTree = "<group>"; };
+		16DE681B175E3597005C0843 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16DE681C175E3597005C0843 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16DE681E175E3597005C0843 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		16DE6820175E3597005C0843 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		16DE6822175E3597005C0843 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		16DE682F175E394D005C0843 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		16DE6833175E3994005C0843 /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		16DE6835175E39A2005C0843 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		16DE6837175E39AE005C0843 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		16DE6839175E39B8005C0843 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		16DE683D175E3AF8005C0843 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		16DE683E175E3AF8005C0843 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		16DE6840175E3AF8005C0843 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SinaWeibo.bundle; sourceTree = "<group>"; };
+		16DE6841175E3AF8005C0843 /* SinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeibo.h; sourceTree = "<group>"; };
+		16DE6842175E3AF8005C0843 /* SinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeibo.m; sourceTree = "<group>"; };
+		16DE6843175E3AF8005C0843 /* SinaWeiboAuthorizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboAuthorizeView.h; sourceTree = "<group>"; };
+		16DE6844175E3AF8005C0843 /* SinaWeiboAuthorizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboAuthorizeView.m; sourceTree = "<group>"; };
+		16DE6845175E3AF8005C0843 /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboConstants.h; sourceTree = "<group>"; };
+		16DE6846175E3AF8005C0843 /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboRequest.h; sourceTree = "<group>"; };
+		16DE6847175E3AF8005C0843 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
+		16DE684D175E41CB005C0843 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		16DE684E175E41CB005C0843 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		16DE6852175E41EE005C0843 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		16DE6853175E41EE005C0843 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16DE6806175E3597005C0843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DE683A175E39B8005C0843 /* CoreTelephony.framework in Frameworks */,
+				16DE6838175E39AE005C0843 /* libsqlite3.0.dylib in Frameworks */,
+				16DE6836175E39A2005C0843 /* SystemConfiguration.framework in Frameworks */,
+				16DE6834175E3994005C0843 /* libiconv.2.4.0.dylib in Frameworks */,
+				16DE680D175E3597005C0843 /* UIKit.framework in Frameworks */,
+				16DE680F175E3597005C0843 /* Foundation.framework in Frameworks */,
+				16DE6811175E3597005C0843 /* CoreGraphics.framework in Frameworks */,
+				16DE6830175E394D005C0843 /* TencentOpenAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16DE6800175E3596005C0843 = {
+			isa = PBXGroup;
+			children = (
+				16DE682C175E3603005C0843 /* ViewController */,
+				16DE682B175E35E6005C0843 /* Function */,
+				16DE682A175E35D0005C0843 /* DataModel */,
+				16DE6829175E35C4005C0843 /* SNS */,
+				16DE6812175E3597005C0843 /* iBaby */,
+				16DE680B175E3597005C0843 /* Frameworks */,
+				16DE680A175E3597005C0843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16DE680A175E3597005C0843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6809175E3597005C0843 /* iBaby.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16DE680B175E3597005C0843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6839175E39B8005C0843 /* CoreTelephony.framework */,
+				16DE6837175E39AE005C0843 /* libsqlite3.0.dylib */,
+				16DE6835175E39A2005C0843 /* SystemConfiguration.framework */,
+				16DE6833175E3994005C0843 /* libiconv.2.4.0.dylib */,
+				16DE682F175E394D005C0843 /* TencentOpenAPI.framework */,
+				16DE680C175E3597005C0843 /* UIKit.framework */,
+				16DE680E175E3597005C0843 /* Foundation.framework */,
+				16DE6810175E3597005C0843 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16DE6812175E3597005C0843 /* iBaby */ = {
+			isa = PBXGroup;
+			children = (
+				16DE681B175E3597005C0843 /* AppDelegate.h */,
+				16DE681C175E3597005C0843 /* AppDelegate.m */,
+				16DE6813175E3597005C0843 /* Supporting Files */,
+			);
+			path = iBaby;
+			sourceTree = "<group>";
+		};
+		16DE6813175E3597005C0843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6814175E3597005C0843 /* iBaby-Info.plist */,
+				16DE6815175E3597005C0843 /* InfoPlist.strings */,
+				16DE6818175E3597005C0843 /* main.m */,
+				16DE681A175E3597005C0843 /* iBaby-Prefix.pch */,
+				16DE681E175E3597005C0843 /* Default.png */,
+				16DE6820175E3597005C0843 /* Default@2x.png */,
+				16DE6822175E3597005C0843 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16DE6829175E35C4005C0843 /* SNS */ = {
+			isa = PBXGroup;
+			children = (
+				16DE682E175E3894005C0843 /* QQ */,
+				16DE682D175E388B005C0843 /* Weibo */,
+			);
+			name = SNS;
+			sourceTree = "<group>";
+		};
+		16DE682A175E35D0005C0843 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		16DE682B175E35E6005C0843 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		16DE682C175E3603005C0843 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6851175E41E4005C0843 /* Login */,
+				16DE6850175E41D3005C0843 /* Launch */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		16DE682D175E388B005C0843 /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				16DE683C175E3AF8005C0843 /* JSONKit */,
+				16DE683F175E3AF8005C0843 /* SinaWeibo */,
+			);
+			name = Weibo;
+			sourceTree = "<group>";
+		};
+		16DE682E175E3894005C0843 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
+		16DE683C175E3AF8005C0843 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				16DE683D175E3AF8005C0843 /* JSONKit.h */,
+				16DE683E175E3AF8005C0843 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		16DE683F175E3AF8005C0843 /* SinaWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6840175E3AF8005C0843 /* SinaWeibo.bundle */,
+				16DE6841175E3AF8005C0843 /* SinaWeibo.h */,
+				16DE6842175E3AF8005C0843 /* SinaWeibo.m */,
+				16DE6843175E3AF8005C0843 /* SinaWeiboAuthorizeView.h */,
+				16DE6844175E3AF8005C0843 /* SinaWeiboAuthorizeView.m */,
+				16DE6845175E3AF8005C0843 /* SinaWeiboConstants.h */,
+				16DE6846175E3AF8005C0843 /* SinaWeiboRequest.h */,
+				16DE6847175E3AF8005C0843 /* SinaWeiboRequest.m */,
+			);
+			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		16DE6850175E41D3005C0843 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				16DE684D175E41CB005C0843 /* LaunchViewController.h */,
+				16DE684E175E41CB005C0843 /* LaunchViewController.m */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		16DE6851175E41E4005C0843 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				16DE6852175E41EE005C0843 /* LoginViewController.h */,
+				16DE6853175E41EE005C0843 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16DE6808175E3597005C0843 /* iBaby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16DE6826175E3597005C0843 /* Build configuration list for PBXNativeTarget "iBaby" */;
+			buildPhases = (
+				16DE6805175E3597005C0843 /* Sources */,
+				16DE6806175E3597005C0843 /* Frameworks */,
+				16DE6807175E3597005C0843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBaby;
+			productName = iBaby;
+			productReference = 16DE6809175E3597005C0843 /* iBaby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16DE6801175E3597005C0843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jacob QQ:110773265";
+			};
+			buildConfigurationList = 16DE6804175E3597005C0843 /* Build configuration list for PBXProject "iBaby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 16DE6800175E3596005C0843;
+			productRefGroup = 16DE680A175E3597005C0843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16DE6808175E3597005C0843 /* iBaby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16DE6807175E3597005C0843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DE6817175E3597005C0843 /* InfoPlist.strings in Resources */,
+				16DE681F175E3597005C0843 /* Default.png in Resources */,
+				16DE6821175E3597005C0843 /* Default@2x.png in Resources */,
+				16DE6823175E3597005C0843 /* Default-568h@2x.png in Resources */,
+				16DE6832175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				16DE6849175E3AF8005C0843 /* SinaWeibo.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16DE6805175E3597005C0843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DE6819175E3597005C0843 /* main.m in Sources */,
+				16DE681D175E3597005C0843 /* AppDelegate.m in Sources */,
+				16DE6848175E3AF8005C0843 /* JSONKit.m in Sources */,
+				16DE684A175E3AF8005C0843 /* SinaWeibo.m in Sources */,
+				16DE684B175E3AF8005C0843 /* SinaWeiboAuthorizeView.m in Sources */,
+				16DE684C175E3AF8005C0843 /* SinaWeiboRequest.m in Sources */,
+				16DE684F175E41CB005C0843 /* LaunchViewController.m in Sources */,
+				16DE6854175E41EE005C0843 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16DE6815175E3597005C0843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16DE6816175E3597005C0843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16DE6824175E3597005C0843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16DE6825175E3597005C0843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16DE6827175E3597005C0843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
+				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		16DE6828175E3597005C0843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
+				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16DE6804175E3597005C0843 /* Build configuration list for PBXProject "iBaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DE6824175E3597005C0843 /* Debug */,
+				16DE6825175E3597005C0843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16DE6826175E3597005C0843 /* Build configuration list for PBXNativeTarget "iBaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DE6827175E3597005C0843 /* Debug */,
+				16DE6828175E3597005C0843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16DE6801175E3597005C0843 /* Project object */;
+}
