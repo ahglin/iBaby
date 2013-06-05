@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "SNSManager.h"
 @interface LoginViewController ()
 
 @end
@@ -26,7 +26,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor whiteColor];
+    UIButton *test=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    test.titleLabel.text=@"tes";
+    [test addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:test];
 	// Do any additional setup after loading the view.
+}
+
+-(void)test
+{
+    [[SNSManager sharedInstance]loginWithType:SNSTYPE_QQ];
 }
 
 - (void)didReceiveMemoryWarning

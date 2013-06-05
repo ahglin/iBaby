@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.babychina.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.qianwang365.qianbao</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -30,6 +30,16 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>tencent100444509</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>weibo</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>sinaweibosso.2219428386</string>
 			</array>
 		</dict>
 	</array>

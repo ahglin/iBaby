@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "SNSManager.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,8 +17,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     LoginViewController *testVC=[[LoginViewController alloc]init];
-    [self.window addSubview:testVC.view];
-    self.window.backgroundColor = [UIColor whiteColor];
+//    [testVC.view setFrame:self.window.frame];
+    self.window.rootViewController=testVC;
+    [[SNSManager sharedInstance]initSNSWithType:SNSTYPE_QQ];
+//    [[SNSManager snsSharedInstance]loginWithType:SNSTYPE_WEIBO];
+//    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -40,12 +45,29 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [[SNSManager sharedInstance].sinaweibo applicationDidBecomeActive];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if ([url.absoluteString hasPrefix:@"tencent"]) {
+        return [[SNSManager sharedInstance].tencentOAuth handleOpenURL:url];
+    }
+    else if([url.absoluteString hasPrefix:@"weibo"])
+    {
+        [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+    }
 }
 
 @end

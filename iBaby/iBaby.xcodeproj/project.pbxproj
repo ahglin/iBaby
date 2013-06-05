@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D98ABE175EF5DD00BC4940 /* SNSManager.m */; };
+		16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */; };
 		16DE680D175E3597005C0843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE680C175E3597005C0843 /* UIKit.framework */; };
 		16DE680F175E3597005C0843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE680E175E3597005C0843 /* Foundation.framework */; };
 		16DE6811175E3597005C0843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6810175E3597005C0843 /* CoreGraphics.framework */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16D98ABD175EF5DD00BC4940 /* SNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSManager.h; sourceTree = "<group>"; };
+		16D98ABE175EF5DD00BC4940 /* SNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSManager.m; sourceTree = "<group>"; };
+		16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		16DE6809175E3597005C0843 /* iBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DE680C175E3597005C0843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		16DE680E175E3597005C0843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,8 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DE683A175E39B8005C0843 /* CoreTelephony.framework in Frameworks */,
+				16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */,
+				16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */,
 				16DE6838175E39AE005C0843 /* libsqlite3.0.dylib in Frameworks */,
+				16DE683A175E39B8005C0843 /* CoreTelephony.framework in Frameworks */,
 				16DE6836175E39A2005C0843 /* SystemConfiguration.framework in Frameworks */,
 				16DE6834175E3994005C0843 /* libiconv.2.4.0.dylib in Frameworks */,
 				16DE680D175E3597005C0843 /* UIKit.framework in Frameworks */,
@@ -89,6 +97,7 @@
 		16DE6800175E3596005C0843 = {
 			isa = PBXGroup;
 			children = (
+				16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */,
 				16DE682C175E3603005C0843 /* ViewController */,
 				16DE682B175E35E6005C0843 /* Function */,
 				16DE682A175E35D0005C0843 /* DataModel */,
@@ -151,6 +160,8 @@
 			children = (
 				16DE682E175E3894005C0843 /* QQ */,
 				16DE682D175E388B005C0843 /* Weibo */,
+				16D98ABD175EF5DD00BC4940 /* SNSManager.h */,
+				16D98ABE175EF5DD00BC4940 /* SNSManager.m */,
 			);
 			name = SNS;
 			sourceTree = "<group>";
@@ -312,6 +323,7 @@
 				16DE684C175E3AF8005C0843 /* SinaWeiboRequest.m in Sources */,
 				16DE684F175E41CB005C0843 /* LaunchViewController.m in Sources */,
 				16DE6854175E41EE005C0843 /* LoginViewController.m in Sources */,
+				16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +407,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,7 +426,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -436,6 +454,7 @@
 				16DE6828175E3597005C0843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
