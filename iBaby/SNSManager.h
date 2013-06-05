@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 #import "SinaWeibo.h"
 
 #define kAppSinaKey             @"2219428386"
@@ -25,13 +26,22 @@ typedef enum _SNSTYPE
     SNSTYPE_RENREN,
 }   SNSTYPE;
 
-@interface SNSManager : NSObject <SinaWeiboDelegate,TencentSessionDelegate>
+@protocol SNSManagerDelegate <NSObject>
+
+@required
+-(void)checkingStatus;//告诉uiviewcontroller已经登陆成功，可以去刷新检测状态，譬如sinaweibo isValidate  ; tencentOauth isSessionValid
+
+@end
+
+@interface SNSManager : NSObject <SinaWeiboDelegate,TencentSessionDelegate,QQApiInterfaceDelegate>
 {
     SinaWeibo       *_sinaweibo;
     TencentOAuth    *_tencentOAuth;
     NSMutableArray  *_permissions;
+    __weak id <SNSManagerDelegate> _delegate;
 }
 
+@property (weak ) id<SNSManagerDelegate>  delegate;
 @property (readonly,nonatomic) SinaWeibo    *sinaweibo;
 @property (readonly,nonatomic) TencentOAuth *tencentOAuth;
 

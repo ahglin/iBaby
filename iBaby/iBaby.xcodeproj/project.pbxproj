@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1650D575175F7FAE005D347B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1650D574175F7FAE005D347B /* libstdc++.dylib */; };
 		16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D98ABE175EF5DD00BC4940 /* SNSManager.m */; };
 		16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1650D574175F7FAE005D347B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		16D98ABD175EF5DD00BC4940 /* SNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSManager.h; sourceTree = "<group>"; };
 		16D98ABE175EF5DD00BC4940 /* SNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSManager.m; sourceTree = "<group>"; };
 		16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1650D575175F7FAE005D347B /* libstdc++.dylib in Frameworks */,
 				16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */,
 				16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */,
 				16DE6838175E39AE005C0843 /* libsqlite3.0.dylib in Frameworks */,
@@ -97,7 +100,6 @@
 		16DE6800175E3596005C0843 = {
 			isa = PBXGroup;
 			children = (
-				16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */,
 				16DE682C175E3603005C0843 /* ViewController */,
 				16DE682B175E35E6005C0843 /* Function */,
 				16DE682A175E35D0005C0843 /* DataModel */,
@@ -119,6 +121,8 @@
 		16DE680B175E3597005C0843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1650D574175F7FAE005D347B /* libstdc++.dylib */,
+				16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */,
 				16DE6839175E39B8005C0843 /* CoreTelephony.framework */,
 				16DE6837175E39AE005C0843 /* libsqlite3.0.dylib */,
 				16DE6835175E39A2005C0843 /* SystemConfiguration.framework */,
@@ -400,6 +404,7 @@
 		16DE6827175E3597005C0843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -407,11 +412,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-lstdc++",
-				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,6 +422,7 @@
 		16DE6828175E3597005C0843 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -426,11 +430,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-lstdc++",
-				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

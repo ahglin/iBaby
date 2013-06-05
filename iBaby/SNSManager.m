@@ -14,6 +14,7 @@ static SNSManager *_snsManagerInstance=nil;
 
 @synthesize sinaweibo=_sinaweibo;
 @synthesize tencentOAuth=_tencentOAuth;
+@synthesize delegate=_delegate;
 
 +(SNSManager *)sharedInstance
 {
@@ -91,6 +92,7 @@ static SNSManager *_snsManagerInstance=nil;
 
             _tencentOAuth = [[TencentOAuth alloc] initWithAppId:kAppQQKey
                                                     andDelegate:self];
+            _tencentOAuth.redirectURI=@"www.qq.com";
             
             NSDictionary *sinaweiboInfo = [defaults objectForKey:@"TencentAuthData"];
             if ([sinaweiboInfo objectForKey:@"AccessTokenKey"] && [sinaweiboInfo objectForKey:@"ExpirationDateKey"] && [sinaweiboInfo objectForKey:@"UserIDKey"])
@@ -166,6 +168,7 @@ static SNSManager *_snsManagerInstance=nil;
     }
     
     [[NSUserDefaults standardUserDefaults] synchronize];
+    [_delegate checkingStatus];
 }
 
 -(void)loginWithType:(SNSTYPE)type
@@ -178,7 +181,19 @@ static SNSManager *_snsManagerInstance=nil;
             break;
         case SNSTYPE_QQ:
         {
-            [_tencentOAuth authorize:_permissions inSafari:NO];
+            if ( _tencentOAuth.openId && _tencentOAuth.expirationDate &&_tencentOAuth.accessToken ) {
+                NSDate *now = [NSDate date];
+                if ([now compare:_tencentOAuth.expirationDate] == NSOrderedDescending) {
+                    [_tencentOAuth authorize:_permissions inSafari:NO];
+                    return;
+                }
+                else
+                {
+                    [self tencentDidLogin];
+                }
+            }
+            else
+                [_tencentOAuth authorize:_permissions inSafari:NO];
         }
             break;
         case SNSTYPE_RENREN:
@@ -288,6 +303,34 @@ static SNSManager *_snsManagerInstance=nil;
 	 NSLog(@"tencentDidNotNetWork");
 }
 
+- (void)onReq:(QQBaseReq *)req
+{
+    switch (req.type)
+    {
+        case EGETMESSAGEFROMQQREQTYPE:
+        {
+            break;
+        }
+        default:
+        {
+            break;
+        }
+    }
+}
 
+- (void)onResp:(QQBaseResp *)resp
+{
+    switch (resp.type)
+    {
+        case ESENDMESSAGETOQQRESPTYPE:
+        {
+            break;
+        }
+        default:
+        {
+            break;
+        }
+    }
+}
 
 @end

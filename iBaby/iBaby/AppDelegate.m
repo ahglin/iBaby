@@ -10,6 +10,7 @@
 #import "LoginViewController.h"
 #import "SNSManager.h"
 
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +21,7 @@
 //    [testVC.view setFrame:self.window.frame];
     self.window.rootViewController=testVC;
     [[SNSManager sharedInstance]initSNSWithType:SNSTYPE_QQ];
+    [[SNSManager sharedInstance]initSNSWithType:SNSTYPE_WEIBO];
 //    [[SNSManager snsSharedInstance]loginWithType:SNSTYPE_WEIBO];
 //    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -56,17 +58,23 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+    if ([url.absoluteString hasPrefix:@"tencent"]) {
+        return [[SNSManager sharedInstance].tencentOAuth handleOpenURL:url] ;
+    }
+    else if([url.absoluteString hasPrefix:@"weibo"])
+    {
+        return [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+    }
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     if ([url.absoluteString hasPrefix:@"tencent"]) {
-        return [[SNSManager sharedInstance].tencentOAuth handleOpenURL:url];
+        return [[SNSManager sharedInstance].tencentOAuth handleOpenURL:url] ;
     }
     else if([url.absoluteString hasPrefix:@"weibo"])
     {
-        [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+        return [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
     }
 }
 
