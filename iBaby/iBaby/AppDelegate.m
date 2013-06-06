@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "SNSManager.h"
+#import "LaunchViewController.h"
+#import "UserGuideViewController.h"
 
 
 @implementation AppDelegate
@@ -16,16 +18,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    LoginViewController *testVC=[[LoginViewController alloc]init];
-//    [testVC.view setFrame:self.window.frame];
-    self.window.rootViewController=testVC;
-    [[SNSManager sharedInstance]initSNSWithType:SNSTYPE_QQ];
-    [[SNSManager sharedInstance]initSNSWithType:SNSTYPE_WEIBO];
-//    [[SNSManager snsSharedInstance]loginWithType:SNSTYPE_WEIBO];
-//    self.window.backgroundColor = [UIColor whiteColor];
+    LaunchViewController *launchVC=[[LaunchViewController alloc]init];
+    [launchVC.view setFrame:self.window.frame];
+    self.window.rootViewController=launchVC;
+    [self toDoWhileSpalshing];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)toDoWhileSpalshing
+{
+    //执行后台做的事情，做完后弄死launching进下一级
+    LoginViewController *loginVC=[[LoginViewController alloc]init];
+    [loginVC.view setFrame:self.window.frame];
+    self.window.rootViewController=loginVC;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

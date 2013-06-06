@@ -35,6 +35,16 @@
 		16D12C50176028320001B310 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C45176028320001B310 /* AFImageRequestOperation.m */; };
 		16D12C51176028320001B310 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C47176028320001B310 /* UIImageView+AFNetworking.m */; };
 		16D12C52176028320001B310 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C49176028320001B310 /* AFNetworkActivityIndicatorManager.m */; };
+		16D12C5E17602B170001B310 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C5517602B170001B310 /* FMDatabaseQueue.m */; };
+		16D12C5F17602B170001B310 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C5717602B170001B310 /* FMDatabaseAdditions.m */; };
+		16D12C6017602B170001B310 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C5917602B170001B310 /* FMDatabase.m */; };
+		16D12C6117602B170001B310 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C5B17602B170001B310 /* FMResultSet.m */; };
+		16D12C6217602B170001B310 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C5D17602B170001B310 /* FMDatabasePool.m */; };
+		16D12C6817604FF70001B310 /* UserGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C6717604FF70001B310 /* UserGuideViewController.m */; };
+		16D12C6A176058890001B310 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12C69176058890001B310 /* QuartzCore.framework */; };
+		16D12C711760856E0001B310 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D12C6E1760856E0001B310 /* loading.png */; };
+		16D12C721760856E0001B310 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D12C6F1760856E0001B310 /* loading@2x.png */; };
+		16D12C731760856E0001B310 /* loading-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D12C701760856E0001B310 /* loading-568h@2x.png */; };
 		16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D98ABE175EF5DD00BC4940 /* SNSManager.m */; };
 		16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */; };
@@ -44,9 +54,6 @@
 		16DE6817175E3597005C0843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6815175E3597005C0843 /* InfoPlist.strings */; };
 		16DE6819175E3597005C0843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6818175E3597005C0843 /* main.m */; };
 		16DE681D175E3597005C0843 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE681C175E3597005C0843 /* AppDelegate.m */; };
-		16DE681F175E3597005C0843 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE681E175E3597005C0843 /* Default.png */; };
-		16DE6821175E3597005C0843 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6820175E3597005C0843 /* Default@2x.png */; };
-		16DE6823175E3597005C0843 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6822175E3597005C0843 /* Default-568h@2x.png */; };
 		16DE6830175E394D005C0843 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE682F175E394D005C0843 /* TencentOpenAPI.framework */; };
 		16DE6832175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		16DE6834175E3994005C0843 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6833175E3994005C0843 /* libiconv.2.4.0.dylib */; };
@@ -121,6 +128,22 @@
 		16D12C47176028320001B310 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		16D12C48176028320001B310 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		16D12C49176028320001B310 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		16D12C5417602B170001B310 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		16D12C5517602B170001B310 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		16D12C5617602B170001B310 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		16D12C5717602B170001B310 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		16D12C5817602B170001B310 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		16D12C5917602B170001B310 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		16D12C5A17602B170001B310 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		16D12C5B17602B170001B310 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		16D12C5C17602B170001B310 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		16D12C5D17602B170001B310 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		16D12C6617604FF70001B310 /* UserGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuideViewController.h; sourceTree = "<group>"; };
+		16D12C6717604FF70001B310 /* UserGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuideViewController.m; sourceTree = "<group>"; };
+		16D12C69176058890001B310 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		16D12C6E1760856E0001B310 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = iBaby/loading.png; sourceTree = "<group>"; };
+		16D12C6F1760856E0001B310 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loading@2x.png"; path = "iBaby/loading@2x.png"; sourceTree = "<group>"; };
+		16D12C701760856E0001B310 /* loading-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loading-568h@2x.png"; path = "iBaby/loading-568h@2x.png"; sourceTree = "<group>"; };
 		16D98ABD175EF5DD00BC4940 /* SNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSManager.h; sourceTree = "<group>"; };
 		16D98ABE175EF5DD00BC4940 /* SNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSManager.m; sourceTree = "<group>"; };
 		16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -134,9 +157,6 @@
 		16DE681A175E3597005C0843 /* iBaby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBaby-Prefix.pch"; sourceTree = "<group>"; };
 		16DE681B175E3597005C0843 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16DE681C175E3597005C0843 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		16DE681E175E3597005C0843 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		16DE6820175E3597005C0843 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		16DE6822175E3597005C0843 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		16DE682F175E394D005C0843 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		16DE6833175E3994005C0843 /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
@@ -164,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D12C6A176058890001B310 /* QuartzCore.framework in Frameworks */,
 				16D12C1717601E1F0001B310 /* CFNetwork.framework in Frameworks */,
 				16D12C1617601E190001B310 /* MobileCoreServices.framework in Frameworks */,
 				16D12BEC17601AEA0001B310 /* ImageIO.framework in Frameworks */,
@@ -189,6 +210,7 @@
 		16D12BE8176019D70001B310 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				16D12C5317602A570001B310 /* FMDB */,
 				16D12C291760230B0001B310 /* PUDefine.h */,
 				16D12C36176026780001B310 /* AFNetworking */,
 				16D12C251760224E0001B310 /* Memory */,
@@ -310,9 +332,37 @@
 			name = AFNetworking;
 			sourceTree = "<group>";
 		};
+		16D12C5317602A570001B310 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C5417602B170001B310 /* FMDatabaseQueue.h */,
+				16D12C5517602B170001B310 /* FMDatabaseQueue.m */,
+				16D12C5617602B170001B310 /* FMDatabaseAdditions.h */,
+				16D12C5717602B170001B310 /* FMDatabaseAdditions.m */,
+				16D12C5817602B170001B310 /* FMDatabase.h */,
+				16D12C5917602B170001B310 /* FMDatabase.m */,
+				16D12C5A17602B170001B310 /* FMResultSet.h */,
+				16D12C5B17602B170001B310 /* FMResultSet.m */,
+				16D12C5C17602B170001B310 /* FMDatabasePool.h */,
+				16D12C5D17602B170001B310 /* FMDatabasePool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		16D12C6B176083DE0001B310 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C6E1760856E0001B310 /* loading.png */,
+				16D12C6F1760856E0001B310 /* loading@2x.png */,
+				16D12C701760856E0001B310 /* loading-568h@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		16DE6800175E3596005C0843 = {
 			isa = PBXGroup;
 			children = (
+				16D12C6B176083DE0001B310 /* Resource */,
 				16D12BE8176019D70001B310 /* Utility */,
 				16DE682C175E3603005C0843 /* ViewController */,
 				16DE682B175E35E6005C0843 /* Function */,
@@ -335,6 +385,7 @@
 		16DE680B175E3597005C0843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16D12C69176058890001B310 /* QuartzCore.framework */,
 				16D12C1417601DFF0001B310 /* MobileCoreServices.framework */,
 				16D12C1217601DC90001B310 /* CFNetwork.framework */,
 				16D12BEB17601AEA0001B310 /* ImageIO.framework */,
@@ -370,9 +421,6 @@
 				16DE6815175E3597005C0843 /* InfoPlist.strings */,
 				16DE6818175E3597005C0843 /* main.m */,
 				16DE681A175E3597005C0843 /* iBaby-Prefix.pch */,
-				16DE681E175E3597005C0843 /* Default.png */,
-				16DE6820175E3597005C0843 /* Default@2x.png */,
-				16DE6822175E3597005C0843 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -457,6 +505,8 @@
 			children = (
 				16DE684D175E41CB005C0843 /* LaunchViewController.h */,
 				16DE684E175E41CB005C0843 /* LaunchViewController.m */,
+				16D12C6617604FF70001B310 /* UserGuideViewController.h */,
+				16D12C6717604FF70001B310 /* UserGuideViewController.m */,
 			);
 			name = Launch;
 			sourceTree = "<group>";
@@ -522,11 +572,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DE6817175E3597005C0843 /* InfoPlist.strings in Resources */,
-				16DE681F175E3597005C0843 /* Default.png in Resources */,
-				16DE6821175E3597005C0843 /* Default@2x.png in Resources */,
-				16DE6823175E3597005C0843 /* Default-568h@2x.png in Resources */,
 				16DE6832175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				16DE6849175E3AF8005C0843 /* SinaWeibo.bundle in Resources */,
+				16D12C711760856E0001B310 /* loading.png in Resources */,
+				16D12C721760856E0001B310 /* loading@2x.png in Resources */,
+				16D12C731760856E0001B310 /* loading-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +618,12 @@
 				16D12C50176028320001B310 /* AFImageRequestOperation.m in Sources */,
 				16D12C51176028320001B310 /* UIImageView+AFNetworking.m in Sources */,
 				16D12C52176028320001B310 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				16D12C5E17602B170001B310 /* FMDatabaseQueue.m in Sources */,
+				16D12C5F17602B170001B310 /* FMDatabaseAdditions.m in Sources */,
+				16D12C6017602B170001B310 /* FMDatabase.m in Sources */,
+				16D12C6117602B170001B310 /* FMResultSet.m in Sources */,
+				16D12C6217602B170001B310 /* FMDatabasePool.m in Sources */,
+				16D12C6817604FF70001B310 /* UserGuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
