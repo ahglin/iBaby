@@ -36,7 +36,7 @@
 
 -(void)test
 {
-    [[SNSManager sharedInstance]loginWithType:SNSTYPE_QQ];
+    [[SNSManager sharedInstance]loginWithType:SNSTYPE_WEIBO];
 }
 
 - (void)didReceiveMemoryWarning

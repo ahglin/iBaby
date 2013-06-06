@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1650D575175F7FAE005D347B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1650D574175F7FAE005D347B /* libstdc++.dylib */; };
+		16D12BEA17601AC40001B310 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12BE917601AC40001B310 /* SDWebImage.framework */; };
+		16D12BEC17601AEA0001B310 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12BEB17601AEA0001B310 /* ImageIO.framework */; };
+		16D12BF017601BA80001B310 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12BEF17601BA80001B310 /* MBProgressHUD.m */; };
+		16D12C0717601D690001B310 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12BF817601D690001B310 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0817601D690001B310 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12BFA17601D690001B310 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0917601D690001B310 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12BFC17601D690001B310 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0A17601D690001B310 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12BFE17601D690001B310 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0B17601D690001B310 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C0017601D690001B310 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0C17601D690001B310 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C0217601D690001B310 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0D17601D690001B310 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C0417601D690001B310 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C0E17601D690001B310 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C0617601D690001B310 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C1117601D740001B310 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C1017601D740001B310 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C1617601E190001B310 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12C1417601DFF0001B310 /* MobileCoreServices.framework */; };
+		16D12C1717601E1F0001B310 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12C1217601DC90001B310 /* CFNetwork.framework */; };
+		16D12C1B17601F690001B310 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12C1917601F690001B310 /* libMobClickLibrary.a */; };
+		16D12C1F17601FC00001B310 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C1E17601FC00001B310 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C23176021A20001B310 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C21176021A20001B310 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16D12C281760225C0001B310 /* QBShowMemoryCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D12C271760225C0001B310 /* QBShowMemoryCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D98ABE175EF5DD00BC4940 /* SNSManager.m */; };
 		16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DE6831175E396B005C0843 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */; };
@@ -37,6 +55,44 @@
 
 /* Begin PBXFileReference section */
 		1650D574175F7FAE005D347B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		16D12BE917601AC40001B310 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		16D12BEB17601AEA0001B310 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		16D12BEE17601BA80001B310 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		16D12BEF17601BA80001B310 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		16D12BF317601D680001B310 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		16D12BF417601D680001B310 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		16D12BF517601D680001B310 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		16D12BF617601D680001B310 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		16D12BF717601D690001B310 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		16D12BF817601D690001B310 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		16D12BF917601D690001B310 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		16D12BFA17601D690001B310 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		16D12BFB17601D690001B310 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		16D12BFC17601D690001B310 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		16D12BFD17601D690001B310 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		16D12BFE17601D690001B310 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		16D12BFF17601D690001B310 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		16D12C0017601D690001B310 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		16D12C0117601D690001B310 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		16D12C0217601D690001B310 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		16D12C0317601D690001B310 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		16D12C0417601D690001B310 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		16D12C0517601D690001B310 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		16D12C0617601D690001B310 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		16D12C0F17601D740001B310 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		16D12C1017601D740001B310 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		16D12C1217601DC90001B310 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		16D12C1417601DFF0001B310 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		16D12C1917601F690001B310 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		16D12C1A17601F690001B310 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		16D12C1D17601FC00001B310 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		16D12C1E17601FC00001B310 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		16D12C20176021A20001B310 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		16D12C21176021A20001B310 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		16D12C22176021A20001B310 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		16D12C261760225C0001B310 /* QBShowMemoryCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBShowMemoryCount.h; sourceTree = "<group>"; };
+		16D12C271760225C0001B310 /* QBShowMemoryCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBShowMemoryCount.m; sourceTree = "<group>"; };
+		16D12C291760230B0001B310 /* PUDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDefine.h; sourceTree = "<group>"; };
 		16D98ABD175EF5DD00BC4940 /* SNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSManager.h; sourceTree = "<group>"; };
 		16D98ABE175EF5DD00BC4940 /* SNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSManager.m; sourceTree = "<group>"; };
 		16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -80,6 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D12C1717601E1F0001B310 /* CFNetwork.framework in Frameworks */,
+				16D12C1617601E190001B310 /* MobileCoreServices.framework in Frameworks */,
+				16D12BEC17601AEA0001B310 /* ImageIO.framework in Frameworks */,
 				1650D575175F7FAE005D347B /* libstdc++.dylib in Frameworks */,
 				16D98AC2175F3A6600BC4940 /* libz.1.1.3.dylib in Frameworks */,
 				16D98AC0175F3A2900BC4940 /* TencentOpenApi_IOS_Bundle.bundle in Frameworks */,
@@ -91,15 +150,115 @@
 				16DE680F175E3597005C0843 /* Foundation.framework in Frameworks */,
 				16DE6811175E3597005C0843 /* CoreGraphics.framework in Frameworks */,
 				16DE6830175E394D005C0843 /* TencentOpenAPI.framework in Frameworks */,
+				16D12BEA17601AC40001B310 /* SDWebImage.framework in Frameworks */,
+				16D12C1B17601F690001B310 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16D12BE8176019D70001B310 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C291760230B0001B310 /* PUDefine.h */,
+				16D12C251760224E0001B310 /* Memory */,
+				16D12C24176021A50001B310 /* Base64 */,
+				16D12C1C17601FB40001B310 /* OpenUDID */,
+				16D12C1817601F560001B310 /* Umeng */,
+				16D12BF217601D550001B310 /* ASIHttprequest */,
+				16D12BF117601D400001B310 /* Reachability */,
+				16D12BED17601B9C0001B310 /* MBProgressHUD */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		16D12BED17601B9C0001B310 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				16D12BEE17601BA80001B310 /* MBProgressHUD.h */,
+				16D12BEF17601BA80001B310 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		16D12BF117601D400001B310 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C0F17601D740001B310 /* Reachability.h */,
+				16D12C1017601D740001B310 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		16D12BF217601D550001B310 /* ASIHttprequest */ = {
+			isa = PBXGroup;
+			children = (
+				16D12BF317601D680001B310 /* ASIHTTPRequestConfig.h */,
+				16D12BF417601D680001B310 /* ASICacheDelegate.h */,
+				16D12BF517601D680001B310 /* ASIHTTPRequestDelegate.h */,
+				16D12BF617601D680001B310 /* ASIProgressDelegate.h */,
+				16D12BF717601D690001B310 /* ASIAuthenticationDialog.h */,
+				16D12BF817601D690001B310 /* ASIAuthenticationDialog.m */,
+				16D12BF917601D690001B310 /* ASIInputStream.h */,
+				16D12BFA17601D690001B310 /* ASIInputStream.m */,
+				16D12BFB17601D690001B310 /* ASIFormDataRequest.h */,
+				16D12BFC17601D690001B310 /* ASIFormDataRequest.m */,
+				16D12BFD17601D690001B310 /* ASIHTTPRequest.h */,
+				16D12BFE17601D690001B310 /* ASIHTTPRequest.m */,
+				16D12BFF17601D690001B310 /* ASINetworkQueue.h */,
+				16D12C0017601D690001B310 /* ASINetworkQueue.m */,
+				16D12C0117601D690001B310 /* ASIDownloadCache.h */,
+				16D12C0217601D690001B310 /* ASIDownloadCache.m */,
+				16D12C0317601D690001B310 /* ASIDataDecompressor.h */,
+				16D12C0417601D690001B310 /* ASIDataDecompressor.m */,
+				16D12C0517601D690001B310 /* ASIDataCompressor.h */,
+				16D12C0617601D690001B310 /* ASIDataCompressor.m */,
+			);
+			name = ASIHttprequest;
+			sourceTree = "<group>";
+		};
+		16D12C1817601F560001B310 /* Umeng */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C1917601F690001B310 /* libMobClickLibrary.a */,
+				16D12C1A17601F690001B310 /* MobClick.h */,
+			);
+			name = Umeng;
+			sourceTree = "<group>";
+		};
+		16D12C1C17601FB40001B310 /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C1D17601FC00001B310 /* OpenUDID.h */,
+				16D12C1E17601FC00001B310 /* OpenUDID.m */,
+			);
+			name = OpenUDID;
+			sourceTree = "<group>";
+		};
+		16D12C24176021A50001B310 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C20176021A20001B310 /* GTMBase64.h */,
+				16D12C21176021A20001B310 /* GTMBase64.m */,
+				16D12C22176021A20001B310 /* GTMDefines.h */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		16D12C251760224E0001B310 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				16D12C261760225C0001B310 /* QBShowMemoryCount.h */,
+				16D12C271760225C0001B310 /* QBShowMemoryCount.m */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
 		16DE6800175E3596005C0843 = {
 			isa = PBXGroup;
 			children = (
+				16D12BE8176019D70001B310 /* Utility */,
 				16DE682C175E3603005C0843 /* ViewController */,
 				16DE682B175E35E6005C0843 /* Function */,
 				16DE682A175E35D0005C0843 /* DataModel */,
@@ -121,6 +280,10 @@
 		16DE680B175E3597005C0843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16D12C1417601DFF0001B310 /* MobileCoreServices.framework */,
+				16D12C1217601DC90001B310 /* CFNetwork.framework */,
+				16D12BEB17601AEA0001B310 /* ImageIO.framework */,
+				16D12BE917601AC40001B310 /* SDWebImage.framework */,
 				1650D574175F7FAE005D347B /* libstdc++.dylib */,
 				16D98AC1175F3A6600BC4940 /* libz.1.1.3.dylib */,
 				16DE6839175E39B8005C0843 /* CoreTelephony.framework */,
@@ -328,6 +491,19 @@
 				16DE684F175E41CB005C0843 /* LaunchViewController.m in Sources */,
 				16DE6854175E41EE005C0843 /* LoginViewController.m in Sources */,
 				16D98ABF175EF5DD00BC4940 /* SNSManager.m in Sources */,
+				16D12BF017601BA80001B310 /* MBProgressHUD.m in Sources */,
+				16D12C0717601D690001B310 /* ASIAuthenticationDialog.m in Sources */,
+				16D12C0817601D690001B310 /* ASIInputStream.m in Sources */,
+				16D12C0917601D690001B310 /* ASIFormDataRequest.m in Sources */,
+				16D12C0A17601D690001B310 /* ASIHTTPRequest.m in Sources */,
+				16D12C0B17601D690001B310 /* ASINetworkQueue.m in Sources */,
+				16D12C0C17601D690001B310 /* ASIDownloadCache.m in Sources */,
+				16D12C0D17601D690001B310 /* ASIDataDecompressor.m in Sources */,
+				16D12C0E17601D690001B310 /* ASIDataCompressor.m in Sources */,
+				16D12C1117601D740001B310 /* Reachability.m in Sources */,
+				16D12C1F17601FC00001B310 /* OpenUDID.m in Sources */,
+				16D12C23176021A20001B310 /* GTMBase64.m in Sources */,
+				16D12C281760225C0001B310 /* QBShowMemoryCount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +588,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -430,6 +610,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBaby/iBaby-Prefix.pch";
 				INFOPLIST_FILE = "iBaby/iBaby-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
