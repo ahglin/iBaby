@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161BE17117637C9F00A7C17D /* BabyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE17017637C9F00A7C17D /* BabyInfo.m */; };
+		161BE174176380F100A7C17D /* FetusInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE173176380F100A7C17D /* FetusInfo.m */; };
+		161BE1771763826000A7C17D /* ParentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE1761763826000A7C17D /* ParentInfo.m */; };
+		161BE17A1763881700A7C17D /* SNSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE1791763881700A7C17D /* SNSModel.m */; };
 		1650D575175F7FAE005D347B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1650D574175F7FAE005D347B /* libstdc++.dylib */; };
 		16D12BEA17601AC40001B310 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12BE917601AC40001B310 /* SDWebImage.framework */; };
 		16D12BEC17601AEA0001B310 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D12BEB17601AEA0001B310 /* ImageIO.framework */; };
@@ -70,6 +74,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161BE16F17637C9F00A7C17D /* BabyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyInfo.h; sourceTree = "<group>"; };
+		161BE17017637C9F00A7C17D /* BabyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyInfo.m; sourceTree = "<group>"; };
+		161BE172176380F100A7C17D /* FetusInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetusInfo.h; sourceTree = "<group>"; };
+		161BE173176380F100A7C17D /* FetusInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetusInfo.m; sourceTree = "<group>"; };
+		161BE1751763826000A7C17D /* ParentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentInfo.h; sourceTree = "<group>"; };
+		161BE1761763826000A7C17D /* ParentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentInfo.m; sourceTree = "<group>"; };
+		161BE1781763881700A7C17D /* SNSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSModel.h; sourceTree = "<group>"; };
+		161BE1791763881700A7C17D /* SNSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSModel.m; sourceTree = "<group>"; };
 		1650D574175F7FAE005D347B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		16D12BE917601AC40001B310 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		16D12BEB17601AEA0001B310 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -432,6 +444,8 @@
 				16DE682D175E388B005C0843 /* Weibo */,
 				16D98ABD175EF5DD00BC4940 /* SNSManager.h */,
 				16D98ABE175EF5DD00BC4940 /* SNSManager.m */,
+				161BE1781763881700A7C17D /* SNSModel.h */,
+				161BE1791763881700A7C17D /* SNSModel.m */,
 			);
 			name = SNS;
 			sourceTree = "<group>";
@@ -439,6 +453,12 @@
 		16DE682A175E35D0005C0843 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				161BE16F17637C9F00A7C17D /* BabyInfo.h */,
+				161BE17017637C9F00A7C17D /* BabyInfo.m */,
+				161BE172176380F100A7C17D /* FetusInfo.h */,
+				161BE173176380F100A7C17D /* FetusInfo.m */,
+				161BE1751763826000A7C17D /* ParentInfo.h */,
+				161BE1761763826000A7C17D /* ParentInfo.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -624,6 +644,10 @@
 				16D12C6117602B170001B310 /* FMResultSet.m in Sources */,
 				16D12C6217602B170001B310 /* FMDatabasePool.m in Sources */,
 				16D12C6817604FF70001B310 /* UserGuideViewController.m in Sources */,
+				161BE17117637C9F00A7C17D /* BabyInfo.m in Sources */,
+				161BE174176380F100A7C17D /* FetusInfo.m in Sources */,
+				161BE1771763826000A7C17D /* ParentInfo.m in Sources */,
+				161BE17A1763881700A7C17D /* SNSModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
