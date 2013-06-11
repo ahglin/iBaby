@@ -11,7 +11,7 @@
 #import "SNSManager.h"
 #import "LaunchViewController.h"
 #import "UserGuideViewController.h"
-
+#import "HttpEngine.h"
 
 @implementation AppDelegate
 
@@ -32,6 +32,7 @@
     LoginViewController *loginVC=[[LoginViewController alloc]init];
     [loginVC.view setFrame:self.window.frame];
     self.window.rootViewController=loginVC;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

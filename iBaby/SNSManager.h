@@ -10,6 +10,7 @@
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/QQApiInterface.h>
 #import "SinaWeibo.h"
+#import "SNSModel.h"
 
 #define kAppSinaKey             @"2219428386"
 #define kAppSinaSecret          @"7823d74dff7fcb1d3baf154ef7ad9b4e"
@@ -19,12 +20,6 @@
 #define kAppQQSecret            @"c7b703b1ae58ef96ff73508b97132196"
 #define kAppQQRedirectURI       @"http://www.qq.com"
 
-typedef enum _SNSTYPE
-{
-    SNSTYPE_WEIBO = 0,
-    SNSTYPE_QQ,
-    SNSTYPE_RENREN,
-}   SNSTYPE;
 
 @protocol SNSManagerDelegate <NSObject>
 
@@ -33,11 +28,12 @@ typedef enum _SNSTYPE
 
 @end
 
-@interface SNSManager : NSObject <SinaWeiboDelegate,TencentSessionDelegate,QQApiInterfaceDelegate>
+@interface SNSManager : NSObject <SinaWeiboDelegate,SinaWeiboRequestDelegate,TencentSessionDelegate,QQApiInterfaceDelegate>
 {
     SinaWeibo       *_sinaweibo;
     TencentOAuth    *_tencentOAuth;
     NSMutableArray  *_permissions;
+    NSDictionary    *_userInfo;
     __weak id <SNSManagerDelegate> _delegate;
 }
 
@@ -53,5 +49,7 @@ typedef enum _SNSTYPE
 - (void)removeAuthDataWithType:(SNSTYPE)type;
 - (void)storeAuthDataWithType:(SNSTYPE)type;
 -(BOOL)checkAuthDataStatusWithType:(SNSTYPE)type;
+
+-(void)getUserInfoWithType:(SNSTYPE)type;
 
 @end

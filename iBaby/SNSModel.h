@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SNSManager.h"
+
+
+typedef enum _SNSTYPE
+{
+    SNSTYPE_WEIBO = 0,
+    SNSTYPE_QQ,
+    SNSTYPE_RENREN,
+}   SNSTYPE;
+
 
 @interface SNSModel : NSObject
 

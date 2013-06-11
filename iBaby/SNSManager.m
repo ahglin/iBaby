@@ -230,6 +230,29 @@ static SNSManager *_snsManagerInstance=nil;
 }
 
 
+-(void)getUserInfoWithType:(SNSTYPE)type
+{
+    switch (type) {
+        case SNSTYPE_WEIBO:
+        {
+            [_sinaweibo requestWithURL:@"users/show.json" params:[NSMutableDictionary dictionaryWithObject:_sinaweibo.userID forKey:@"uid"] httpMethod:@"GET" delegate:self];
+        }
+            break;
+        case SNSTYPE_QQ:
+        {
+            
+        }
+            break;
+        case SNSTYPE_RENREN:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
+}
+
 #pragma mark - SinaWeibo Delegate
 
 - (void)sinaweiboDidLogIn:(SinaWeibo *)sinaweibo
@@ -266,11 +289,19 @@ static SNSManager *_snsManagerInstance=nil;
 
 - (void)request:(SinaWeiboRequest *)request didFailWithError:(NSError *)error
 {
-    
+    if ([request.url hasSuffix:@"users/show.json"])
+    {
+        _userInfo = nil;
+    }
 }
 
 - (void)request:(SinaWeiboRequest *)request didFinishLoadingWithResult:(id)result
 {
+    if ([request.url hasSuffix:@"users/show.json"])
+    {
+        _userInfo=result;
+        
+    }
 
 }
 

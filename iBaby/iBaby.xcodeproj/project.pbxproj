@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1619EC46176574190032499C /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1619EC45176574190032499C /* AFAppDotNetAPIClient.m */; };
+		1619EC49176574DB0032499C /* HttpEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1619EC48176574DB0032499C /* HttpEngine.m */; };
+		1619EC4B176582610032499C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619EC4A176582610032499C /* Security.framework */; };
 		161BE17117637C9F00A7C17D /* BabyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE17017637C9F00A7C17D /* BabyInfo.m */; };
 		161BE174176380F100A7C17D /* FetusInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE173176380F100A7C17D /* FetusInfo.m */; };
 		161BE1771763826000A7C17D /* ParentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BE1761763826000A7C17D /* ParentInfo.m */; };
@@ -74,6 +77,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1619EC44176574190032499C /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		1619EC45176574190032499C /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		1619EC47176574DB0032499C /* HttpEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpEngine.h; sourceTree = "<group>"; };
+		1619EC48176574DB0032499C /* HttpEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpEngine.m; sourceTree = "<group>"; };
+		1619EC4A176582610032499C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		161BE16F17637C9F00A7C17D /* BabyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyInfo.h; sourceTree = "<group>"; };
 		161BE17017637C9F00A7C17D /* BabyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyInfo.m; sourceTree = "<group>"; };
 		161BE172176380F100A7C17D /* FetusInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetusInfo.h; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 		16DE684E175E41CB005C0843 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		16DE6852175E41EE005C0843 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		16DE6853175E41EE005C0843 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		16F183F9176632A100100BEE /* HttpDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1619EC4B176582610032499C /* Security.framework in Frameworks */,
 				16D12C6A176058890001B310 /* QuartzCore.framework in Frameworks */,
 				16D12C1717601E1F0001B310 /* CFNetwork.framework in Frameworks */,
 				16D12C1617601E190001B310 /* MobileCoreServices.framework in Frameworks */,
@@ -321,6 +331,8 @@
 		16D12C36176026780001B310 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				1619EC44176574190032499C /* AFAppDotNetAPIClient.h */,
+				1619EC45176574190032499C /* AFAppDotNetAPIClient.m */,
 				16D12C37176028320001B310 /* AFNetworking.h */,
 				16D12C38176028320001B310 /* AFURLConnectionOperation.h */,
 				16D12C39176028320001B310 /* AFURLConnectionOperation.m */,
@@ -397,6 +409,7 @@
 		16DE680B175E3597005C0843 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1619EC4A176582610032499C /* Security.framework */,
 				16D12C69176058890001B310 /* QuartzCore.framework */,
 				16D12C1417601DFF0001B310 /* MobileCoreServices.framework */,
 				16D12C1217601DC90001B310 /* CFNetwork.framework */,
@@ -466,6 +479,9 @@
 		16DE682B175E35E6005C0843 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				1619EC47176574DB0032499C /* HttpEngine.h */,
+				1619EC48176574DB0032499C /* HttpEngine.m */,
+				16F183F9176632A100100BEE /* HttpDefines.h */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -648,6 +664,8 @@
 				161BE174176380F100A7C17D /* FetusInfo.m in Sources */,
 				161BE1771763826000A7C17D /* ParentInfo.m in Sources */,
 				161BE17A1763881700A7C17D /* SNSModel.m in Sources */,
+				1619EC46176574190032499C /* AFAppDotNetAPIClient.m in Sources */,
+				1619EC49176574DB0032499C /* HttpEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
