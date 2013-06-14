@@ -74,6 +74,12 @@
 		16DE684C175E3AF8005C0843 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6847175E3AF8005C0843 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		16DE684F175E41CB005C0843 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE684E175E41CB005C0843 /* LaunchViewController.m */; };
 		16DE6854175E41EE005C0843 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE6853175E41EE005C0843 /* LoginViewController.m */; };
+		3DDD4F77176B071800BE852A /* login_163.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F71176B071800BE852A /* login_163.png */; };
+		3DDD4F78176B071800BE852A /* login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F72176B071800BE852A /* login_bg@2x.png */; };
+		3DDD4F79176B071800BE852A /* login_qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F73176B071800BE852A /* login_qq.png */; };
+		3DDD4F7A176B071800BE852A /* login_sina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F74176B071800BE852A /* login_sina.png */; };
+		3DDD4F7B176B071800BE852A /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F75176B071800BE852A /* nav_back@2x.png */; };
+		3DDD4F7C176B071800BE852A /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD4F76176B071800BE852A /* nav_bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +204,12 @@
 		16DE6852175E41EE005C0843 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		16DE6853175E41EE005C0843 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		16F183F9176632A100100BEE /* HttpDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpDefines.h; sourceTree = "<group>"; };
+		3DDD4F71176B071800BE852A /* login_163.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_163.png; sourceTree = "<group>"; };
+		3DDD4F72176B071800BE852A /* login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_bg@2x.png"; sourceTree = "<group>"; };
+		3DDD4F73176B071800BE852A /* login_qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_qq.png; sourceTree = "<group>"; };
+		3DDD4F74176B071800BE852A /* login_sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_sina.png; sourceTree = "<group>"; };
+		3DDD4F75176B071800BE852A /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		3DDD4F76176B071800BE852A /* nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +391,12 @@
 				16D12C6E1760856E0001B310 /* loading.png */,
 				16D12C6F1760856E0001B310 /* loading@2x.png */,
 				16D12C701760856E0001B310 /* loading-568h@2x.png */,
+				3DDD4F71176B071800BE852A /* login_163.png */,
+				3DDD4F72176B071800BE852A /* login_bg@2x.png */,
+				3DDD4F73176B071800BE852A /* login_qq.png */,
+				3DDD4F74176B071800BE852A /* login_sina.png */,
+				3DDD4F75176B071800BE852A /* nav_back@2x.png */,
+				3DDD4F76176B071800BE852A /* nav_bg@2x.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -613,6 +631,12 @@
 				16D12C711760856E0001B310 /* loading.png in Resources */,
 				16D12C721760856E0001B310 /* loading@2x.png in Resources */,
 				16D12C731760856E0001B310 /* loading-568h@2x.png in Resources */,
+				3DDD4F77176B071800BE852A /* login_163.png in Resources */,
+				3DDD4F78176B071800BE852A /* login_bg@2x.png in Resources */,
+				3DDD4F79176B071800BE852A /* login_qq.png in Resources */,
+				3DDD4F7A176B071800BE852A /* login_sina.png in Resources */,
+				3DDD4F7B176B071800BE852A /* nav_back@2x.png in Resources */,
+				3DDD4F7C176B071800BE852A /* nav_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 #import "LaunchViewController.h"
 #import "UserGuideViewController.h"
 #import "HttpEngine.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation AppDelegate
 
@@ -30,8 +31,11 @@
 {
     //执行后台做的事情，做完后弄死launching进下一级
     LoginViewController *loginVC=[[LoginViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC ];
+    [self resetNavigationBarColor:nav];
+    
     [loginVC.view setFrame:self.window.frame];
-    self.window.rootViewController=loginVC;
+    self.window.rootViewController=nav;
     
 }
 
@@ -82,6 +86,18 @@
     else if([url.absoluteString hasPrefix:@"weibo"])
     {
         return [[SNSManager sharedInstance].sinaweibo handleOpenURL:url];
+    }
+}
+
+#pragma mark - private methods
+-(void)resetNavigationBarColor:(UINavigationController *)navigationController
+{
+    UIImage *image = [UIImage imageNamed:@"nav_bg"];
+    Class ios5Class = (NSClassFromString(@"CIImage"));
+    if (nil != ios5Class) {
+        [navigationController.navigationBar setBackgroundImage:image forBarMetrics:0];
+    }else{
+        navigationController.navigationBar.layer.contents = (id)image.CGImage;
     }
 }
 
